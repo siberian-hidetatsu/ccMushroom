@@ -215,6 +215,7 @@
     <Compile Include="TabMngDlg.Designer.cs">
       <DependentUpon>TabMngDlg.cs</DependentUpon>
     </Compile>
+    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.ico" />
