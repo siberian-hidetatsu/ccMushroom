@@ -288,6 +288,10 @@
   <ItemGroup>
     <None Include="images\sysHelp.ico" />
   </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="branch-images\ccMushroom ScreenShot.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>
