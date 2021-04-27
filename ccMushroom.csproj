@@ -10,7 +10,8 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ccMushroom</RootNamespace>
     <AssemblyName>ccMushroom</AssemblyName>
-    <ApplicationIcon>App.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>
@@ -68,176 +69,6 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CommonFunctions.cs" />
-    <Compile Include="LogonDlg.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LogonDlg.Designer.cs">
-      <DependentUpon>LogonDlg.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ProgUpdateClass.cs" />
-    <Compile Include="ProgUpdateMessage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ProgUpdateMessage.designer.cs">
-      <DependentUpon>ProgUpdateMessage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ProgUpdateRemoteCheck.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ProgUpdateRemoteCheck.designer.cs">
-      <DependentUpon>ProgUpdateRemoteCheck.cs</DependentUpon>
-    </Compile>
-    <Compile Include="WindowsAPICodePack\Core\Interop\CommonDllNames.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="WindowsAPICodePack\Core\Interop\CoreErrorHelper.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="WindowsAPICodePack\Core\Interop\CoreHelpers.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="WindowsAPICodePack\Core\Interop\CoreNativeMethods.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="WindowsAPICodePack\Core\PropertySystem\PropertyKey.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="WindowsAPICodePack\Core\PropertySystem\PropVariant.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="WindowsAPICodePack\Core\PropertySystem\PropVariantNativeMethods.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="ExitDlg.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ExitDlg.Designer.cs">
-      <DependentUpon>ExitDlg.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ccFunctions.cs" />
-    <Compile Include="IconHelper.cs" />
-    <Compile Include="SetEnvironmentDlg.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SetEnvironmentDlg.Designer.cs">
-      <DependentUpon>SetEnvironmentDlg.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ShellLink.cs" />
-    <Compile Include="WindowsAPICodePack\Shell\Common\ShellEnums.cs" />
-    <Compile Include="WindowsAPICodePack\Shell\Common\SortColumn.cs" />
-    <Compile Include="WindowsAPICodePack\Shell\Interop\Common\ShellCOMGuids.cs" />
-    <Compile Include="WindowsAPICodePack\Shell\Interop\Common\ShellCOMInterfaces.cs" />
-    <Compile Include="WindowsAPICodePack\Shell\Interop\Common\ShellNativeMethods.cs" />
-    <Compile Include="WindowsAPICodePack\Shell\Interop\Common\WindowUtilities.cs" />
-    <Compile Include="WindowsAPICodePack\Shell\Interop\PropertySystem\PropertySystemCOMInterfaces.cs" />
-    <Compile Include="WindowsAPICodePack\Shell\Interop\PropertySystem\PropertySystemNativeMethods.cs" />
-    <Compile Include="WindowsAPICodePack\Shell\Interop\PropertySystem\ShellPropertyDescription.cs" />
-    <Compile Include="WindowsAPICodePack\Shell\Interop\PropertySystem\ShellPropertyDescriptionsCache.cs" />
-    <Compile Include="WindowsAPICodePack\Shell\Interop\PropertySystem\ShellPropertyEnums.cs" />
-    <Compile Include="WindowsAPICodePack\Shell\Interop\PropertySystem\ShellPropertyEnumType.cs" />
-    <Compile Include="WindowsAPICodePack\Shell\Interop\PropertySystem\SystemProperties.cs" />
-    <Compile Include="WindowsAPICodePack\Shell\Interop\Taskbar\TabbedThumbnailNativeMethods.cs" />
-    <Compile Include="WindowsAPICodePack\Shell\Interop\Taskbar\TaskbarCOMInterfaces.cs" />
-    <Compile Include="WindowsAPICodePack\Shell\Interop\Taskbar\TaskbarNativeMethods.cs" />
-    <Compile Include="WindowsAPICodePack\Shell\Taskbar\TabbedThumbnailBitmapRequestedEventArgs.cs" />
-    <Compile Include="WindowsAPICodePack\Shell\Taskbar\TabbedThumbnailManager.cs" />
-    <Compile Include="WindowsAPICodePack\Shell\Taskbar\TaskbarEnums.cs" />
-    <Compile Include="WindowsAPICodePack\Shell\Taskbar\TaskbarWindowManager.cs" />
-    <Compile Include="WindowsAPICodePack\Shell\Taskbar\ThumbnailToolbarManager.cs" />
-    <Compile Include="ShortcutMngDlg.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ShortcutMngDlg.Designer.cs">
-      <DependentUpon>ShortcutMngDlg.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ccMushroom.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ccMushroom.Designer.cs">
-      <DependentUpon>ccMushroom.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WindowsAPICodePack\Shell\Taskbar\TabbedThumbnailProxyWindow.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="WindowsAPICodePack\Shell\Taskbar\TabbedThumbnailScreenCapture.cs" />
-    <Compile Include="WindowsAPICodePack\Shell\Taskbar\TaskbarManager.cs" />
-    <Compile Include="WindowsAPICodePack\Shell\Taskbar\TaskbarWindow.cs" />
-    <Compile Include="WindowsAPICodePack\Shell\Taskbar\ThumbnailButton.cs" />
-    <Compile Include="WindowsAPICodePack\Shell\Taskbar\ThumbnailButtonClickedEventArgs.cs" />
-    <Compile Include="WindowsAPICodePack\Shell\Taskbar\ThumbnailToolbarProxyWindow.cs" />
-    <EmbeddedResource Include="ccMushroom.resx">
-      <SubType>Designer</SubType>
-      <DependentUpon>ccMushroom.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LogonDlg.resx">
-      <DependentUpon>LogonDlg.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ProgUpdateMessage.resx">
-      <DependentUpon>ProgUpdateMessage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ProgUpdateRemoteCheck.resx">
-      <DependentUpon>ProgUpdateRemoteCheck.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <None Include="App.config" />
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-    <Compile Include="SplashForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SplashForm.Designer.cs">
-      <DependentUpon>SplashForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="WindowsAPICodePack\Shell\Taskbar\TabbedThumbnail.cs" />
-    <Compile Include="WindowsAPICodePack\Shell\Taskbar\TabbedThumbnailEventArgs.cs" />
-    <Compile Include="TabMngDlg.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TabMngDlg.Designer.cs">
-      <DependentUpon>TabMngDlg.cs</DependentUpon>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="App.ico" />
-    <EmbeddedResource Include="ExitDlg.resx">
-      <DependentUpon>ExitDlg.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Resources\drag.cur" />
-    <EmbeddedResource Include="SetEnvironmentDlg.resx">
-      <DependentUpon>SetEnvironmentDlg.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ShortcutMngDlg.resx">
-      <DependentUpon>ShortcutMngDlg.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SplashForm.resx">
-      <SubType>Designer</SubType>
-      <DependentUpon>SplashForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TabMngDlg.resx">
-      <DependentUpon>TabMngDlg.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
       <Visible>False</Visible>
       <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
@@ -265,30 +96,8 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="images\sysOption.ico" />
+    <Folder Include="Properties\" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="images\favicon%40url.dll.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="images\tabお気に入り.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="images\sysExit.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="images\newApp.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="images\Click-through.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="images\runAs.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="images\sysHelp.ico" />
-  </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Content Include="branch-images\ccMushroom ScreenShot.png" />
   </ItemGroup>
