@@ -3191,8 +3191,8 @@ namespace ccMushroom
 			try
 			{
 				if ( remoteFile.Extension.ToLower() == ".config" ||
-					remoteFile.Extension.ToUpper() == ".INI" ||
-					remoteFile.Extension.ToLower() == ".xml" )
+					remoteFile.Extension.ToUpper() == ".INI"/* ||
+					remoteFile.Extension.ToLower() == ".xml"*/ )
 				{
 					if ( File.Exists(localFileName) )
 					{
@@ -3201,6 +3201,24 @@ namespace ccMushroom
 					}
 
 					configFile = true;
+				}
+				else if ( remoteFile.Extension.ToLower() == ".xml" )
+				{
+					string dirname = remoteFile.DirectoryName;
+					string filename = Path.GetFileNameWithoutExtension(remoteFile.Name);
+					string dllname = $"{dirname}\\{filename}.dll";
+
+					// ファイル名と同一の dll ファイルは無い（＝NuGet パッケージではない）？
+					if ( !File.Exists(dllname) )
+					{
+						if ( File.Exists(localFileName) )
+						{
+							File.Copy(localFileName, localFileName + ".bak", true);
+							ccConfigurationLog.Append(" File.Copy(" + localFileName + ", " + localFileName + ".bak" + ", true);\r\n");
+						}
+
+						configFile = true;
+					}
 				}
 			}
 			catch ( Exception exp )
